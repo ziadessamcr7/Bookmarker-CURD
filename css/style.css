@@ -1,0 +1,10 @@
+body{
+    background-color: cadetblue;
+}
+
+.brdr{
+
+    border: 1px black ;
+    border-style: dashed;
+    margin: 40px 0;
+}
