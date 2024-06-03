@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,31 +10,32 @@
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
     <div class="container">
         <h1 class="text-center fst-italic mb-5">Bookmarker</h1>
 
         <h2 class="text-center pt-4  border-top border-black mb-5">
-            <i class="fa-solid fa-bookmark"></i>   Bookmark your favorite sites
+            <i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites
         </h2>
 
-    
+
         <label for="sn" class="fw-bold text-capitalize">
-            <i class="fa-solid fa-book-bookmark pe-2"></i>  site name
+            <i class="fa-solid fa-book-bookmark pe-2"></i> site name
         </label>
-        <input id="sn"  type="text" class="form-control mb-3" placeholder="Bookmark name">
+        <input id="sn" type="text" class="form-control mb-3" placeholder="Bookmark name">
 
         <label for="su" class="fw-bold text-capitalize">
-            <i class="fa-solid fa-link pe-2"></i>    site url
+            <i class="fa-solid fa-link pe-2"></i> site url
         </label>
-        <input id="su" type="url"  class="form-control mb-4" placeholder="Website URL">
-        
+        <input id="su" type="url" class="form-control mb-4" placeholder="Website URL">
 
+        <button disabled onclick="createSite()" id="btnSubmit" class="btn btn-dark px-5 fs-5">Submit</button>
 
-        <button onclick="createSite()" id="btn" disabled  class="btn btn-dark m-auto d-block px-5 fs-5" >Submit</button>
+        <button onclick="updateElement()" id="btnUpdate" class="btn btn-dark px-5 fs-5 d-none">Update</button>
 
-        <div class="brdr">  </div>
+        <div class="brdr"> </div>
 
         <table class="table text-center">
             <thead>
@@ -42,6 +44,7 @@
                     <th>Website</th>
                     <th>Visit</th>
                     <th>Delete</th>
+                    <th>Update</th>
                 </tr>
             </thead>
             <tbody id="tbody">
@@ -56,16 +59,16 @@
 
 
             </tbody>
-        
+
         </table>
-        
+
 
 
     </div>
 
 
-    
-   
+
+
 
 
 
@@ -74,4 +77,5 @@
     <script src="js/main.js"></script>
 
 </body>
+
 </html>
